@@ -80,6 +80,7 @@ export default function App() {
 
     const toSearch = (e) => {
         const { value } = e.target;
+        setTable({ ...table, currentPage: 1 });
         setSearch(value);
     }
 
